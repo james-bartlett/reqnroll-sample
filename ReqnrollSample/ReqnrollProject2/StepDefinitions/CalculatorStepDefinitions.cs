@@ -10,7 +10,7 @@ public sealed class CalculatorStepDefinitions(SampleDriver _driver)
     int secondNumber;
     int sum;
 
-    [Given("the first number is {int}")]
+    [Given("the first num is {int}")]
     public void GivenTheFirstNumberIs(int number)
     {
         //TODO: implement arrange (precondition) logic
@@ -22,7 +22,7 @@ public sealed class CalculatorStepDefinitions(SampleDriver _driver)
         firstNumber = number;
     }
 
-    [Given("the second number is {int}")]
+    [Given("the second num is {int}")]
     public void GivenTheSecondNumberIs(int number)
     {
         //TODO: implement arrange (precondition) logic
@@ -30,7 +30,7 @@ public sealed class CalculatorStepDefinitions(SampleDriver _driver)
         secondNumber = number;
     }
 
-    [When("the two numbers are added")]
+    [When("the two nums are added")]
     public void WhenTheTwoNumbersAreAdded()
     {
         //TODO: implement act (action) logic
@@ -38,7 +38,7 @@ public sealed class CalculatorStepDefinitions(SampleDriver _driver)
         sum = firstNumber + secondNumber;
     }
 
-    [Then("the result should be {int}")]
+    [Then("the output should be {int}")]
     public void ThenTheResultShouldBe(int result)
     {
         //TODO: implement assert (verification) logic
