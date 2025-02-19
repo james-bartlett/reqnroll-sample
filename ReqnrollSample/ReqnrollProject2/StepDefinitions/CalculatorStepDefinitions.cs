@@ -3,7 +3,7 @@ using ReqnrollProject1.Drivers;
 namespace ReqnrollProject2.StepDefinitions;
 
 [Binding]
-public sealed class CalculatorStepDefinitions(SampleDriver _driver)
+public sealed class CalculatorStepDefinitions(SampleDriverFromProject _driver)
 {
     // For additional details on Reqnroll step definitions see https://go.reqnroll.net/doc-stepdef
     int firstNumber;
