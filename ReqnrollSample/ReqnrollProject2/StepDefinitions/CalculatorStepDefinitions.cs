@@ -1,16 +1,18 @@
+﻿
+using ClassLibrary1;
 using ReqnrollProject1.Drivers;
 
 namespace ReqnrollProject2.StepDefinitions;
 
 [Binding]
-public sealed class CalculatorStepDefinitions(SampleDriver _driver)
+public sealed class CalculatorStepDefinitions(SampleDriverFromProject _driver) 
 {
     // For additional details on Reqnroll step definitions see https://go.reqnroll.net/doc-stepdef
     int firstNumber;
     int secondNumber;
-    int sum;
+    int output;
 
-    [Given("the first number is {int}")]
+    [Given("the first num is {int}")]
     public void GivenTheFirstNumberIs(int number)
     {
         //TODO: implement arrange (precondition) logic
@@ -22,7 +24,7 @@ public sealed class CalculatorStepDefinitions(SampleDriver _driver)
         firstNumber = number;
     }
 
-    [Given("the second number is {int}")]
+    [Given("the second num is {int}")]
     public void GivenTheSecondNumberIs(int number)
     {
         //TODO: implement arrange (precondition) logic
@@ -30,19 +32,19 @@ public sealed class CalculatorStepDefinitions(SampleDriver _driver)
         secondNumber = number;
     }
 
-    [When("the two numbers are added")]
+    [When("the two nums are added")]
     public void WhenTheTwoNumbersAreAdded()
     {
         //TODO: implement act (action) logic
 
-        sum = firstNumber + secondNumber;
+        output = firstNumber + secondNumber;
     }
 
-    [Then("the result should be {int}")]
+    [Then("the output should be {int}")]
     public void ThenTheResultShouldBe(int result)
     {
         //TODO: implement assert (verification) logic
 
-        Assert.Equal(result, sum);
+        Assert.Equal(result, output);
     }
 }

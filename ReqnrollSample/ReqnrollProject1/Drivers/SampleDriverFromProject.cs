@@ -7,6 +7,6 @@ using System.Threading.Tasks;
 namespace ReqnrollProject1.Drivers;
 
 [Binding]
-public class SampleDriver
+public class SampleDriverFromProject
 {
 }

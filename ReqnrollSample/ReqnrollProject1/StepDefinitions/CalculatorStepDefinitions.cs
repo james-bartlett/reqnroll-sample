@@ -3,12 +3,12 @@ using ReqnrollProject1.Drivers;
 namespace ReqnrollProject1.StepDefinitions;
 
 [Binding]
-public sealed class CalculatorStepDefinitions(SampleDriver _driver)
+public sealed class CalculatorStepDefinitions(SampleDriverFromProject _driver)
 {
     // For additional details on Reqnroll step definitions see https://go.reqnroll.net/doc-stepdef
     int firstNumber;
     int secondNumber;
-    int sum;
+    int output;
 
     [Given("the first number is {int}")]
     public void GivenTheFirstNumberIs(int number)
@@ -35,7 +35,7 @@ public sealed class CalculatorStepDefinitions(SampleDriver _driver)
     {
         //TODO: implement act (action) logic
 
-        sum = firstNumber + secondNumber;
+        output = firstNumber + secondNumber;
     }
 
     [Then("the result should be {int}")]
@@ -43,6 +43,6 @@ public sealed class CalculatorStepDefinitions(SampleDriver _driver)
     {
         //TODO: implement assert (verification) logic
 
-        Assert.Equal(result, sum);
+        Assert.Equal(result, output);
     }
 }
