@@ -1,11 +1,10 @@
 ﻿
 using ClassLibrary1;
-using ReqnrollProject1.Drivers;
 
 namespace ReqnrollProject2.StepDefinitions;
 
 [Binding]
-public sealed class CalculatorStepDefinitions(SampleDriverFromProject _driver) 
+public sealed class CalculatorStepDefinitions(SampleDriverFromLibrary _driver) 
 {
     // For additional details on Reqnroll step definitions see https://go.reqnroll.net/doc-stepdef
     int firstNumber;
